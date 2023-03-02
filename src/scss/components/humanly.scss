@@ -1,0 +1,248 @@
+/************************
+    Branding Section
+************************/    
+
+.work-template-humanly .work_hero, .work-template-humanly .para_full {
+    position: relative;
+}
+
+.work-template-humanly .btn {
+    color: $midbrown;
+}
+
+.humanly_branding_intro {
+    margin: 160px 0;
+    width: 560px;
+}
+
+.humanly_branding_intro h1 {
+    margin-top: 40px;
+}
+
+.humanly_branding_imagery {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.humanly_branding_imagery_left {
+    width: 950px;
+    height: 710px;
+    @include bgCentered;
+}
+
+.humanly_branding_imagery_right {
+    width: 365px;
+    margin-left:30px;
+}
+
+.humanly_branding_imagery_right h1 {
+    margin-top: 40px;
+}
+
+@media screen and (max-width:1023px) {
+    .humanly_branding_imagery {
+        flex-wrap: wrap;
+    }
+
+    .humanly_branding_imagery_left {
+        order: 2;
+        width: 100%;
+        height: 500px;
+    }
+
+    .humanly_branding_imagery_right {
+        width: 100%;
+        margin-left: 0;
+        order: 1;
+        margin-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .humanly_branding_intro {
+        width: auto;
+        margin: 70px 0 160px 0;
+    }
+
+    .work-template-humanly .para_lsab_left {
+        height: 260px;
+    }
+
+    .work-template-humanly .para_lsab_right {
+        height: 290px;
+    }
+
+    .work-template-humanly .para_ps_wrap {
+        margin-top: 110px;
+    }
+
+    .work-template-humanly .para_full_tall {
+        height: 530px;
+    }
+
+    .humanly_branding_imagery_right {
+        margin: 90px 0 215px 0;
+    }
+
+    .humanly_branding_imagery_left {
+        height: 335px;
+    }
+}
+
+/********************
+    Mockup Flex
+********************/
+
+.work-template-humanly .para_mockup_intro_flex {
+    justify-content: flex-start;
+}
+
+.work-template-humanly .para_mockup_intro_flex_left {
+    margin-right: 70px;
+}
+
+.para_mockup_intro_flex_right p {
+    margin-top: 20px;
+}
+
+.para_mockup_intro_flex_right p:nth-child(1) {
+    margin-top: 0;
+}
+
+/**********************
+    Mockup Section
+**********************/
+
+.humanly_full {
+    width: 100%;
+    height: 980px;
+    @include bgCentered;
+}
+
+.humanly_mockup_mid, .humanly_mockup_outro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+}
+
+.humanly_mockup_mid_left {
+    width: 950px;
+    height: 340px;
+    @include bgCentered;
+}
+
+.humanly_mockup_outro_left {
+    width: 950px;
+    height: 625px;
+    @include bgCentered;
+}
+
+.humanly_mockup_outro_left video {
+    background-color: #ffffff;
+}
+
+.humanly_mockup_mid_right, .humanly_mockup_outro_right {
+    width: 365px;
+    margin-left: 30px;
+}
+
+.humanly_mockup_mid_right .bold, .humanly_mockup_outro_right .bold {
+    margin-bottom: 20px;
+}
+
+.humanly_mockup_outro_right p:nth-child(2) {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width:1279px) {
+    .humanly_mockup_mid_left {
+        height: 250px;
+    }
+
+    .humanly_mockup_outro_left {
+        height: 450px;
+    }
+
+    .humanly_full {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .humanly_mockup_mid_left {
+        height: 200px;
+    }
+
+    .humanly_mockup_outro_left {
+        height: 350px;
+    }
+
+    .humanly_full {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .work-template-humanly .para_full {
+        background-position: 26% 25%;
+        height: 400px;
+        background-size: 245%;
+    }
+
+    .work-template-humanly .para_mockup_intro {
+        margin: 70px 0 110px 0;
+    }
+
+    .work-template-humanly .para_mockup_intro_flex_left {
+        margin-right: 0;
+        margin-top: 110px;
+    }   
+
+    .work-template-humanly .para_mockup_intro_flex_right {
+        margin-top: 60px;
+    }
+
+    .humanly_mockup_section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .humanly_mockup_mid {
+        order: 1;
+        display: block;
+    }
+
+    .humanly_mockup_mid_left {
+        width: 100%;
+        height: 215px;
+        background-position: left;
+    }
+
+    .humanly_mockup_mid_right {
+        margin: 45px 0 110px 0;
+        width: 100%;
+    }
+
+    .humanly_full {
+        order: 2;
+        height: 235px;
+    }
+
+    .humanly_mockup_outro {
+        order: 3;
+        display: block;
+    }
+
+    .humanly_mockup_outro_left {
+        width: 100%;
+        height: 215px;
+    }
+
+    .humanly_mockup_outro_right {
+        margin: 45px 0 0 0;
+        width: 100%;
+    }
+}

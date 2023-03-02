@@ -1,0 +1,396 @@
+/***************************
+        LSAB Section
+***************************/
+
+.lsab {
+    display: flex;
+    align-items: flex-end;
+    margin: 170px 0 120px 0;
+}
+
+.lsab_left {
+    width:755px;
+    margin-right: 25px;
+}
+
+#lsab_left_image, .lsab_left_image {
+    width: 100%;
+    height: 705px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.lsab_slide {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+.active_lsab {
+    opacity: 1;
+}
+
+.lsab_left p {
+    width: 65%;
+}
+
+.lsab_right p {
+    width: 80%;
+}
+
+.lsab_right {
+    width: 560px;
+}
+
+.lsab_right_image {
+    width: 100%;
+    height: 370px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1279px) {
+    .lsab_left p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    #lsab_left_image, .lsab_left_image {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .lsab_left, .lsab_right {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    #lsab_left_image, .lsab_left_image, .lsab_right_image {
+        height: 305px;
+    }
+
+    .lsab {
+        display: block;
+        margin: 100px 0 0 0;
+    }
+}
+
+/***************************
+        SLAT Section
+***************************/
+
+.slat {
+    display: flex;
+    align-items: flex-start;
+    margin: 120px 0 75px 0;
+}
+
+.slat_left {
+    width:755px;
+    margin-right: 25px;
+}
+
+.slat_left_image {
+    width: 100%;
+    height: 610px;
+    background-size: cover;
+    background-position: center;
+}
+
+.slat_left p {
+    width: 65%;
+}
+
+.slat_right p {
+    width: 80%;
+}
+
+.slat_right {
+    width: 560px;
+}
+
+.slat_right_image {
+    width: 100%;
+    height: 790px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1279px) {
+    .slat_left p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .slat_left_image {
+        height: 400px;
+    }
+
+    .slat_right_image {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .slat_left, .slat_right {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .slat_left_image, .slat_right_image {
+        height: 305px;
+    }
+
+    .slat {
+        display: block;
+        margin: 100px 0 0 0;
+    }
+}
+
+/***************************
+        LSAT Section
+***************************/
+
+.lsat {
+    display: flex;
+    align-items: flex-start;
+    margin: 0px 0 120px 0;
+}
+
+.lsat_left {
+    width:755px;
+    margin-right: 25px;
+}
+
+.lsat_left_image {
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-position: center;
+}
+
+.lsat_left p {
+    width: 65%;
+}
+
+.lsat_right p {
+    width: 80%;
+}
+
+.lsat_right {
+    width: 560px;
+}
+
+.lsat_right_image {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1279px) {
+    .lsat_left p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .lsat_left_image {
+        height: 450px;
+    }
+
+    .lsat_right_image {
+        height: 305px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .lsat_left, .lsat_right {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .lsat_left_image, .lsat_right_image {
+        height: 305px;
+    }
+
+    .lsat {
+        display: block;
+        margin: 100px 0 0 0;
+    }
+}
+
+/**************************
+       Full Section
+**************************/
+
+.full_text a:hover {
+    opacity: 1;
+}
+
+.full:hover {
+    opacity: .8;
+}
+
+.full {
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+    transition: .5s;
+}
+
+@media screen and (max-width:1023px) {
+    .full {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .full {
+        height: 305px;
+    }
+}
+
+/***************************
+        CTA Section
+***************************/
+
+.cta-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top:330px;
+}
+
+.cta_left {
+    width: 780px;
+}
+
+.cta_right {
+    width: 560px;
+}
+
+.cta_right .large_text {
+    text-transform: inherit;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    width: 330px;
+}
+
+.page-template-front-page .btn {
+    color: $midbrown;
+}
+
+.project_links {
+    display: flex;
+    width: 560px;
+    margin-top: 80px;
+}
+
+.next_project {
+    margin-left: 143px;
+}
+
+.project_links a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1279px) {
+    .cta_left h1 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .project_links {
+        display: block;
+        margin-top: 70px;
+        width: auto;
+    }
+
+    .next_project {
+        margin-left: 0;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .cta-section {
+        display: block;
+        margin-top: 200px;
+    }
+    
+    .cta_left, .cta_right {
+        width: 100%;
+    }
+
+    .cta_left h1 {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .cta_right .large_text {
+        padding-bottom: 60px;
+        padding-top: 0px;
+        width: auto;
+    }
+
+}
+
+/**********************************
+    Header Centered Image Right
+**********************************/
+
+.header_imageRight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:120px 0;
+}
+
+.header_imageRight_right {
+    width: 750px;
+}
+
+.header_imageRight_right h2 {
+    padding:20px 0 10px 0;
+}
+
+.header_imageRight_img {
+    width: 100%;
+    height: 610px;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (max-width:1023px) {
+    .header_imageRight_img {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .header_imageRight {
+        margin: 100px 0;
+    }
+
+    .header_imageRight_left {
+        display: none;
+    }
+
+    .header_imageRight_right {
+        width: 100%;
+    }
+
+    .header_imageRight_img {
+        height: 305px;
+    }
+}

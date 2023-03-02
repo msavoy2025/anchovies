@@ -1,0 +1,459 @@
+/**************************
+    RK Branding Section
+**************************/
+.work-template-rk .work_hero {
+    position: relative;
+}
+
+.lightboxclose11, .ligthboxclose12 {
+    color: $bg;
+}
+
+.rk_branding_section {
+    margin: 120px 0;
+}
+
+.rk_branding_images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rk_branding_images_left {
+    width: 950px;
+    height: 710px;
+    @include bgCentered;
+}
+
+.rk_branding_images_right {
+    width: 365px;
+    height: 710px;
+    @include bgCentered;
+    margin-left:30px;
+}
+
+.rk_branding_content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 180px;
+}
+
+.rk_branding_content_left {
+    display: flex;
+    justify-content: space-between;
+    width: 950px;
+}
+
+.rk_branding_content_left h1 {
+    width: 490px;
+}
+
+.rk_branding_content_right {
+    width: 365px;
+    margin-left:30px;
+}
+
+.rk_branding_content_left p, .rk_branding_content_right p {
+    width: 317px;
+    margin-top: 20px;
+}
+
+.rk_branding_content_text {
+    margin-right: 40px;
+}
+
+@media screen and (max-width:1279px) {
+    .rk_branding_content_left h1 {
+        width: auto;
+        margin-right: 30px;
+    }
+
+    .rk_branding_content_left p, .rk_branding_content_right p {
+        width: auto;
+    }
+
+    .rk_branding_content_text {
+        margin-right: 0px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .rk_branding_images_right, .rk_branding_images_left {
+        height: 400px;
+    } 
+
+    .rk_branding_content {
+        display: block;
+        margin-top: 120px;
+    }
+
+    .rk_branding_content_left {
+        display: block;
+        width: 100%;
+    }
+
+    .rk_branding_content_right {
+        width: 60%;
+        margin-top: 50px;
+        margin-left: 0;
+    }
+
+    .rk_branding_content_text {
+        width: 60%;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .rk_branding_images {
+        display: block;
+    }
+
+    .rk_branding_images_right {
+        height: 635px;
+        width: 100%;
+        margin-left: 0;
+    } 
+
+    .rk_branding_images_left {
+        height: 335px;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .rk_branding_content {
+        margin-top: 50px;
+    }
+
+    .rk_branding_content_left h1 {
+        margin-right: 0;
+    }
+
+    .rk_branding_content_right {
+        width: 100%;
+    }
+
+    .rk_branding_content_text {
+        width: 100%;
+    }
+}
+
+/****************************
+    RK Large-text Section
+****************************/
+
+.rk_largetext_section img {
+    width: 100%;
+}
+
+.rk_largetext_section_mobile {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .rk_largetext_section_mobile {
+        display: block;
+        margin-top: 120px;
+    }
+
+    .rk_largetext_section_desktop {
+        display: none;
+    }
+}
+
+/**************************************
+    RK Branding Development Section
+**************************************/
+
+.rk_branding_development_section {
+    margin: 135px 0 180px 0;
+}
+
+.rk_branding_name {
+    display: flex;
+    align-items: flex-end;
+}
+
+.rk_branding_name_left {
+    width: 560px;
+    height: 560px;
+    @include bgCentered;
+}
+
+.rk_branding_name_right {
+    width: 490px;
+    margin-left: 30px;
+}
+
+.rk_branding_name_right p {
+    width: 320px;
+}
+
+.rk_branding_name_right .bold {
+    margin: 50px 0 20px 0;
+}
+
+.rk_branding_logo_intro {
+    width: 490px;
+    margin: 190px 0;
+}
+
+.rk_branding_logo_images {
+    display: flex;
+}
+
+.rk_branding_logo_images div {
+    width: 50%;
+    height: 670px;
+    @include bgCentered;
+}
+
+.rk_branding_logo_bot {
+    display: flex;
+    margin: 190px 0;
+}
+
+.rk_branding_logo_bot_left {
+    width: 50%;
+}
+
+.rk_branding_logo_bot_left h1 {
+    width: 490px;
+}
+
+.rk_branding_logo_bot_right {
+    width: 50%;
+    position: relative;
+}
+
+.rk_branding_logo_bot_right img {
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width:1279px) {
+    .rk_branding_logo_images div {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .rk_branding_name_left {
+        height: 450px;
+    }
+
+    .rk_branding_logo_bot_left h1 {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .rk_branding_name {
+        display: block;
+    }
+
+    .rk_branding_name_left {
+        width: auto;
+        height: 330px;
+    }
+
+    .rk_branding_name_right {
+        width: auto;
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .rk_branding_name_right h1 {
+        width: 95%;
+    }
+
+    .rk_branding_name_right p {
+        width: auto;
+    }
+
+    .rk_largetext_section img {
+        width: 95%;
+    }
+
+    .rk_branding_logo {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .rk_branding_logo_intro {
+        width: auto;
+        order: 1;
+        margin: 120px 0 45px 0;
+    }
+
+    .rk_branding_logo_images {
+        display: block;
+        width: 100%;
+        order: 3;
+    }
+
+    .rk_branding_logo_images div {
+        width: 100%;
+        height: 325px;
+    }
+
+    .rk_branding_logo_image_left {
+        margin-bottom: 30px;
+    }
+
+    .rk_branding_logo_bot {
+        order: 2;
+        margin: 0;
+        width: 100%;
+    }
+
+    .rk_branding_logo_bot_left {
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .rk_branding_logo_bot_left h1 {
+        width: 100%;
+    }
+
+    .rk_branding_logo_bot_right {
+        display: none;
+    }
+}
+
+/********************************
+       RK Imagery Section
+********************************/
+
+.rk_imagery_full {
+    height: 705px;
+    width: 100%;
+    @include bgCentered;
+    position: relative;
+}
+
+.rk_imagery_bg_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rk_imagery_bg {
+    width: 100%;
+    height: 100%;
+    @include bgCentered;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.rk_imagery_bg_text {
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left:0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rk_imagery_bg_text_left {
+    width: 560px;
+}
+
+.rk_imagery_bg_text_right {
+    width: 755px;
+    margin-left: 30px;
+}
+
+.rk_imagery_bg_text h1 {
+    width: 490px;
+}
+
+.rk_imagery_flex {
+    display: flex;
+    justify-content: space-between;
+    margin:30px 0;
+}
+
+.rk_imagery_flex_left {
+    width: 560px;
+    height: 560px;
+    @include bgCentered;
+}
+
+.rk_imagery_flex_right {
+    width: 755px;
+    height: 560px;
+    @include bgCentered;
+    margin-left:30px;
+    position: relative;
+}
+
+@media screen and (max-width:1023px) {
+    .rk_imagery_full {
+        height: 500px;
+    }
+
+    .rk_imagery_flex_left {
+        height: 350px;
+    }
+
+    .rk_imagery_flex_right {
+        height: 350px;
+    }
+
+    .rk_imagery_bg_text h1 {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .rk_imagery_bg_flex {
+        flex-wrap: wrap;
+        height: auto !important;
+    }
+
+    .rk_imagery_bg {
+        height: 415px;
+        position: static;
+        order: 2;
+    }
+
+    .rk_imagery_bg_text {
+        order: 1;
+        position: static;
+        margin-bottom: 60px;
+        transform: translateY(0);
+    }
+
+    .rk_imagery_bg_text_left {
+        display: none;
+    }
+
+    .rk_imagery_bg_text_right {
+        width: auto;
+        margin-left:0;
+    }
+
+    .rk_imagery_flex {
+        display: block;
+    }
+
+    .rk_imagery_flex_left {
+        height: 325px;
+        width: 100%;
+    }
+
+    .rk_imagery_flex_right {
+        height: 340px;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+    .rk_imagery_full {
+        height: 340px;
+    }
+}

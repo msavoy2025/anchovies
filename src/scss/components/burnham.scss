@@ -1,0 +1,418 @@
+/* Lightbox */
+.work-template-burnham .work_hero {
+    position: relative;
+}
+
+
+/* Full Section */
+
+.burnham_full_1 {
+    width: 100%;
+    height: 795px;
+    @include bgCentered;
+    position: relative;
+    margin-top: 140px;
+}
+
+.burnham_full_1_text {
+    position: absolute;
+    width: 527px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+
+.burnham_full_1_text h1 {
+    color: #ffffff;
+}
+
+.burnham_full_1_text h1:nth-last-child(1) {
+    padding-top:45px;
+}
+
+.burnham_full_text {
+    width: 780px;
+    padding: 140px 0 230px 0;
+}
+
+
+.burnham_full_text h1 {
+    color: $black;
+}
+
+.burnham_full_2 {
+    width: 100%;
+}
+
+.burnham_stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+
+.burnham_stat {
+    width: 380px;
+}
+
+.stat {
+    font-family: 'neue-haas-grotesk-display';
+    font-size: 128px;
+    font-weight: 700;
+    font-feature-settings: 'ss02' on;
+    line-height: 100%; 
+    color: $black;
+}
+
+.stat img {
+    margin-right: 20px;
+}
+
+.stat_text {
+    width: 100%;
+    border-top: 2px solid $black;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width:1279px) {
+    .burnham_stat {
+        width: 31%;
+    }
+
+    .stat {
+        font-size: 100px;
+    }
+
+    .burnham_full_1 {
+        height: 700px;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .stat img {
+        width: 45px;
+        margin-right: 15px;
+    }
+
+    .stat {
+        font-size: 65px;
+    }
+
+    .burnham_full_text {
+        width: auto;
+        padding: 140px 0;
+    }
+
+    .burnham_full_1 {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .burnham_full_1_text {
+        width: 95%;
+    }
+
+    .burnham_full_1 {
+        margin-top: 120px;
+    }
+
+    .burnham_stats {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    .burnham_stat {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+}
+
+/* Design Section */
+
+.design_intro {
+    display: flex;
+    justify-content: space-between;
+    margin:200px 0;
+}
+
+.design_intro_left {
+    width: 560px;
+}
+
+.design_intro_left h1 {
+    padding-bottom: 40px;   
+}
+
+.design_intro_left h1:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.design_intro_right {
+    align-self: flex-end;
+}
+
+.burnham_full_3 {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.design_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.design_flex_left {
+    width: 49%;
+}
+
+.design_flex_left h1 {
+    width: 80%;
+}
+
+.design_flex_right {
+    width: 49%;
+    position: relative;
+}
+
+.design_flex_right_text {
+    position: absolute;
+    bottom: 0;
+}
+
+.design_flex_right_text h1:nth-child(1) {
+    padding-bottom: 40px;
+}
+
+.design_flex_2 {
+    padding: 165px 0;
+}
+
+.inner_flex {
+    display: flex;
+}
+
+.design_flex_inner_left, .design_flex_inner_right {
+    max-width: 290px;
+}
+
+.design_flex_inner_left {
+    margin-right: 75px;
+}
+
+.inner_flex p {
+    padding-top:30px;
+}
+
+.burnham_full_4 {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:1279px) {
+    .design_flex_inner_left {
+        margin-right: 35px;
+    }
+
+    .design_flex_left h1 {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .design_intro {
+        margin:100px 0;
+    }
+
+    .design_intro_left {
+        width: 100%;
+    }
+
+    .design_intro_right {
+        display: none;
+    }
+
+    .design_flex {
+        flex-wrap: wrap;
+    }
+
+    .design_flex h1 {
+        font-size: 30px !important;
+        line-height: 32px !important;
+    }
+
+    .design_flex_2 .design_flex_left {
+        width: 100%;
+    }
+
+    .design_flex_2 .design_flex_left h1 {
+        width: 100%;
+    }
+
+    .inner_flex {
+        display: flex;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .design_flex_inner_left, .design_flex_inner_right {
+        max-width: 45%;
+        margin-top: 100px;
+    }
+
+    .design_flex_2 {
+        padding: 100px 0;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .design_flex_left, .design_flex_right {
+        width: 100%;
+    }
+
+    .design_flex_right_text {
+        position: static;
+        order: 1;
+        padding:60px 0;
+    }
+
+    .drive_mockup {
+        order: 2;
+    }
+
+    .design_flex_right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .design_flex_2 {
+        padding: 60px 0;
+    }
+
+    .design_flex_inner_left, .design_flex_inner_right {
+        margin-right: 0;
+        margin-top: 60px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .inner_flex p {
+        padding-top: 20px;
+    }
+}
+
+/* Mockup Section */
+.burnham_mockup_intro {
+    padding:220px 0 210px 0;
+    width: 520px;
+}
+
+.burnham_mockup_intro h1:nth-last-child(1) {
+    padding-top: 40px;
+}
+
+.burnham_mockup_full {
+    margin-bottom: 20px;
+}
+
+.mockup_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mockup_flex_right {
+    width: 560px;
+    margin-left: 25px;
+}
+.mockup_flex_left {
+    width: 780px;
+}
+
+.mockup_flex_left_img {
+    width: 100%;
+    height: 700px;
+    @include bgCentered;
+}
+
+.mockup_flex_left img {
+    width: 100%;
+}
+
+.mockup_flex_right {
+    position: relative;
+    align-self: flex-end;
+}
+
+.mockup_flex_right_text {
+    padding-top: 60px;
+    max-width: 358px;
+}
+
+
+.mockup_flex_right_text .bold {
+    padding-top: 20px;
+}
+
+.work-template-burnham .cta_right {
+    width: 548px;
+}
+
+/* Lazy loaded images */
+.burnham_full_4 .lazyloaded {
+    width: 100%;
+}
+
+.design_flex_left .lazyloaded {
+    width: 100%;
+}
+
+.burnham_mockup_full .lazyloaded {
+    width: 100%;
+}
+
+.drive_mockup {
+    width: 100%;
+}
+
+@media screen and (max-width:1279px) {
+    .mockup_flex_left_img {
+        height: 525px;
+    }
+
+    .mockup_flex_right_text {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width:1023px) {
+    .mockup_flex {
+        flex-wrap: wrap;
+    }
+
+    .mockup_flex_left {
+        width: 100%;
+    }
+
+    .mockup_flex_right {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+
+    .work-template-burnham .cta_right {
+        width: auto;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .burnham_mockup_intro {
+        padding: 100px 0;
+        width: auto;
+    }
+
+    .mockup_flex_left_img {
+        height: 350px;
+    }
+}

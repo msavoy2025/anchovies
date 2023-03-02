@@ -1,0 +1,43 @@
+{
+  "name": "fdv",
+  "version": "1.0.0",
+  "description": "Frank DeVincent website",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matt-wondercrate/fdv.git"
+  },
+  "keywords": [
+    "frank"
+  ],
+  "author": "Wondercrate",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/matt-wondercrate/fdv/issues"
+  },
+  "homepage": "https://github.com/matt-wondercrate/fdv#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/register": "^7.18.9",
+    "autoprefixer": "^10.2.5",
+    "babel-loader": "^8.2.2",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-if": "^3.0.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "webpack-stream": "^6.1.2",
+    "yargs": "^17.0.1"
+  },
+  "dependencies": {
+    "gsap": "^3.8.0"
+  }
+}

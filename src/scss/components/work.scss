@@ -1,0 +1,315 @@
+/*********************
+       Work Page
+*********************/
+
+.page-template-work p {
+    text-transform: uppercase;
+}
+
+.page-template-work .lsab {
+    margin-top: 70px;
+}
+
+.page-template-work .btn {
+    color:$midbrown;
+}
+
+.page-template-work .cta-section {
+    margin-top: 250px;
+}
+
+@media screen and (max-width:767px) {
+    .page-template-work .cta-section {
+        margin-top: 100px;
+    }   
+}
+
+/* Icons Section */
+
+.icons_section_title {
+    margin: 180px 0 200px 0;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(165px, 1fr));
+    grid-column-gap: 0px;
+    grid-row-gap:0px;
+}
+
+.icon {
+    background-size: cover;
+    background-position: center;
+}
+
+.icon img {
+    width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+    .icons_section_title {
+        margin: 140px 0 0 0;
+    }
+
+    .icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+        grid-column-gap: 15px;
+        grid-row-gap: 15px;
+    }
+}
+
+
+//Featured Works Sliders
+.featured-work-section {
+    padding-top: 110px;
+}
+
+.featured-work {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    padding-top: 70px;
+    border-top: 1px solid $black;
+}
+
+.fw-left {
+    width: 23%;
+    margin-right: 2%;
+    position: relative;
+}
+
+.fw-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.fw-content-links {
+    padding-top: 30px;
+
+    & a {
+        text-decoration: underline;
+    }
+}
+
+.fw-right {
+    width: 75%;
+}
+
+.feat_img {
+    width: 100%;
+    height: 635px;
+    background-size: cover;
+}
+
+.slider {
+    display: flex;
+    position: relative;
+}
+
+.next,
+.prev {
+    border: none;
+    background: none;
+    z-index:9999;
+
+    & img {
+        display: none;
+    }
+}
+
+.prev {
+    order: 1;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    cursor: url('https://anchovies.flywheelstaging.com/wp-content/themes/anchovies/dist/images/arrow_left.svg'), auto;
+}
+
+.inner {
+    position: relative;
+    flex-grow: 1;
+    order: 2;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.next {
+    order: 3;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    cursor: url('https://anchovies.agency/wp-content/themes/anchovies/dist/images/arrow_right.svg'), auto;
+}
+
+.item {
+    width: 100%;
+    position: absolute;
+    display: none;
+}
+
+.active {
+    position: relative;
+    display: block;
+}
+
+.item-next,
+.item-prev {
+    top: 0;
+    display: block;
+    z-index: 1;
+}
+
+.item-next {
+    left: 100%;
+}
+
+.item-prev {
+    left: -100%;
+}
+
+.item-left {
+    animation: slideInLeft 1s forwards;
+}
+
+.item-right {
+    animation: slideInRight 1s forwards;
+}
+
+.active-left {
+    animation: slideOutLeft 1s forwards;
+}
+
+.active-right {
+    animation: slideOutRight 1s forwards;
+}
+
+
+@keyframes slideInLeft {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slideOutLeft {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes slideOutRight {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100%;
+    }
+}
+
+@media screen and (max-width:1279px) {
+    .feat_img {
+            width: 100%;
+            height: 500px;
+            background-size: cover;
+        }
+}
+
+@media screen and (max-width:1023px) {
+    .fw-right {
+        width: 75%;
+    }
+    .feat_img {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+    }
+
+    .next,
+    .prev {
+        position: static;
+        width: 35px;
+        cursor: default;
+        & img {
+            display: block;
+            pointer-events: none;
+        }
+    }
+
+    .prev {
+        left: -50px;
+        margin-right: 15px;
+    }
+
+    .next {
+        right: -50px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .featured-work {
+        display: block;
+        margin-top: 40px;
+        padding-top: 40px;
+    }
+
+    .fw-content {
+        position: static;
+        padding: 30px 0;
+    }
+
+    .fw-left {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .fw-right {
+        width: 100%;
+    }
+
+    .next,
+    .prev {
+        position: absolute;
+        width: 50%;
+    }
+
+    .prev {
+        left: 5px;
+        margin-right: 0;
+
+        & img {
+            margin-right: auto;
+        }
+    }
+
+    .next {
+        right: 5px;
+        margin-left: 0;
+
+        & img {
+            margin-left: auto;
+        }
+    }
+
+}

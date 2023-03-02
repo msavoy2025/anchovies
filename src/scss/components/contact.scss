@@ -1,0 +1,193 @@
+/*********************
+    Contact Page
+*********************/    
+
+.contactWrap {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top:0;
+    z-index: -1;
+}
+
+.contact-page {
+    position: relative;
+    height: 100vh;
+}
+
+.contact_absolute {
+    position: absolute;
+    bottom: 80px;
+    display: flex;
+}
+
+.contact_absolute h1 {
+    margin-bottom:120px;
+}
+
+.contact_left {
+    position: relative;
+    min-width: 415px;
+}
+
+.contact_left .bold, .contact_right .bold {
+    padding-bottom: 30px;
+}
+
+.contact_left_lower {
+    position: absolute;
+    bottom: 0;
+}
+
+.contact_left_lower p br {
+    display: none;
+}
+
+.contact_left_mid {
+    display: flex;
+}
+
+.contact_left_flex_left {
+    margin-right: 35px;
+}
+
+.contact_right {
+    margin-left:245px;
+}
+
+.contactMargin {
+    margin-top: 40px;
+}
+
+.contact_right p {
+    text-transform: none;
+}
+
+.contact_right_flex_left p {
+    position: relative;
+}
+
+.contact_right_flex_left p::before {
+    content:'...';
+    top:0px;
+    left:-30px;
+    position: absolute;
+}
+
+.contact_right_flex_right {
+    margin-top: 30px;
+    max-width: 588px;
+}
+
+.arrow_line {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.arrow_line img {
+    width: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.contact_left_lower a.bold {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width:1279px) {
+    .contact_absolute {
+        display: block;
+    }
+
+    .contact_absolute h1 {
+        margin-bottom: 50px;
+    }
+
+    .contact_left_lower {
+        position: static;
+        margin-top: 30px;
+    }
+
+    .contact_right {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+
+    .contact_right_flex_left p::before {
+        position: static;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .contact_absolute {
+        position: static;
+        margin-top: 150px;
+    }
+
+    .contact-page {
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    .contactWrap {
+        height: auto;
+        position: static;
+    }
+
+    .contact_right_lower {
+        display: block;
+    }
+
+    .contact_right_flex_right {
+        margin-top: 30px;
+    }
+
+    .contact_right_lower div {
+        width: 100%;
+    }
+
+    .contact_left_mid {
+        display: block;
+    }
+
+    .contact_left_flex_right {
+        margin-top: 30px;
+    }
+
+    .contact_left .bold, .contact_right .bold {
+        padding-bottom: 10px;
+    }
+
+    .contact_left_lower p br {
+        display: block;
+    }
+
+    .contact_right_flex_left p::before {
+        position: static;
+    }
+
+    .contact_right_flex_left p {
+        padding-bottom: 10px;
+    }
+
+    .contact_right_flex_left p:nth-last-child(1) {
+        padding-bottom: 0;
+    }
+
+    .contact_left {
+        min-width: auto;
+    }
+
+    .contact_left_lower a.bold {
+        padding-bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .contact_absolute h1 {
+        margin-bottom: 40px;
+    }
+
+}
