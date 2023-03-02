@@ -4,7 +4,9 @@
  */
 
 $sections = carbon_get_the_post_meta( 'crb_sections' );
-get_header(); ?>
+get_header(); 
+//Testing Git Updates
+?>
 
 
 <div class="subheader" style="background-image:url(<?php echo wp_get_attachment_image_url(carbon_get_the_post_meta('subheader_bg'), 'full'); ?>);">
